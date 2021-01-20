@@ -1,0 +1,115 @@
+/*galeria*/
+.slidegalery {
+  position: relative;
+}
+/* Hide the images by default */
+.mySlides1 {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev{
+	cursor: pointer;
+  position: absolute;
+  top: 35%;
+  padding: 50px;
+  margin: -100px 0px 0px -400px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 3px 3px 3px 3px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  padding: 50px;
+  margin: -100px 100px 0px 270px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 3px 3px 3px 3px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-slidegalery {
+  text-align: center;
+  background-color: #222;
+  font-size: 20px;
+  padding: 2px 16px;
+  color: #e3e7e6;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active1,
+.demo:hover {
+  opacity: 1;
+}
+/*posiadanie*/
+.contain {
+  position: absolute;
+  width: 450px;
+  height:350px;
+  margin:5px 0px 0px 115px;
+  
+}
+
+.photocontain {
+  display: block;
+  width: 450px;
+  height:350px;
+ 
+  
+}
+
+.incontain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 450px;
+  height:350px;
+  opacity: 0;
+  transition: .3s ease;
+ 
+}
+
+.contain:hover .incontain{
+  opacity: 1;
+  
+  width: 450px;
+  height:350px;
+}

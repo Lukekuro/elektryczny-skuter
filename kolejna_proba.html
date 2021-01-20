@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.container {
+  position: absolute;
+  width: 450px;
+  height:350px;
+}
+
+.image {
+  display: block;
+  width: 450px;
+  height:350px;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 450px;
+  height:350px;
+  opacity: 0;
+  transition: .3s ease;
+ 
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  
+  width: 450px;
+  height:350px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="obraz/hulanoga1.png" alt="Avatar" class="image">
+  <div class="overlay">
+  <img src="obraz/hulanoga2.png" alt="Avatar" class="image">
+  </div>
+</div>
+
+</body>
+</html>
